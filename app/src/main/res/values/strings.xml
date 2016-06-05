@@ -1,3 +1,144 @@
 <resources>
     <string name="app_name">LWWS Sample</string>
+
+    <!-- ================ 関東 ================ -->
+    <string-array name="kanto_array">
+        <item>茨城県</item>
+        <item>栃木県</item>
+        <item>群馬県</item>
+        <item>埼玉県</item>
+        <item>千葉県</item>
+        <item>東京都</item>
+        <item>神奈川県</item>
+    </string-array>
+
+    <array name="kanto_sub_array">
+        <item>@array/ibaraki_array</item>
+        <item>@array/tochigi_array</item>
+        <item>@array/gunma_array</item>
+        <item>@array/saitama_array</item>
+        <item>@array/chiba_array</item>
+        <item>@array/tokyo_array</item>
+        <item>@array/kanagawa_array</item>
+    </array>
+
+    <!-- ================ 茨城 ================ -->
+    <array name="ibaraki_array">
+        <item>@array/ibaraki_name_array</item>
+        <item>@array/ibaraki_id_array</item>
+    </array>
+
+    <string-array name="ibaraki_name_array">
+        <item>水戸</item>
+        <item>土浦</item>
+    </string-array>
+
+    <string-array name="ibaraki_id_array">
+        <item>080010</item>
+        <item>080020</item>
+    </string-array>
+
+    <!-- ================ 栃木 ================ -->
+    <array name="tochigi_array">
+        <item>@array/tochigi_name_array</item>
+        <item>@array/tochigi_id_array</item>
+    </array>
+
+    <string-array name="tochigi_name_array">
+        <item>宇都宮</item>
+        <item>大田原</item>
+    </string-array>
+
+    <string-array name="tochigi_id_array">
+        <item>090010</item>
+        <item>090020</item>
+    </string-array>
+
+    <!-- ================ 群馬 ================ -->
+    <array name="gunma_array">
+        <item>@array/gunma_name_array</item>
+        <item>@array/gunma_id_array</item>
+    </array>
+
+    <string-array name="gunma_name_array">
+        <item>前橋</item>
+        <item>みなかみ</item>
+    </string-array>
+
+    <string-array name="gunma_id_array">
+        <item>100010</item>
+        <item>100020</item>
+    </string-array>
+
+    <!-- ================ 埼玉 ================ -->
+    <array name="saitama_array">
+        <item>@array/saitama_name_array</item>
+        <item>@array/saitama_id_array</item>
+    </array>
+
+    <string-array name="saitama_name_array">
+        <item>さいたま</item>
+        <item>熊谷</item>
+        <item>秩父</item>
+    </string-array>
+
+    <string-array name="saitama_id_array">
+        <item>110010</item>
+        <item>110020</item>
+        <item>110030</item>
+    </string-array>
+
+    <!-- ================ 千葉 ================ -->
+    <array name="chiba_array">
+        <item>@array/chiba_name_array</item>
+        <item>@array/chiba_id_array</item>
+    </array>
+
+    <string-array name="chiba_name_array">
+        <item>千葉</item>
+        <item>銚子</item>
+        <item>館山</item>
+    </string-array>
+
+    <string-array name="chiba_id_array">
+        <item>120010</item>
+        <item>120020</item>
+        <item>120030</item>
+    </string-array>
+
+    <!-- ================ 東京 ================ -->
+    <array name="tokyo_array">
+        <item>@array/tokyo_name_array</item>
+        <item>@array/tokyo_id_array</item>
+    </array>
+
+    <string-array name="tokyo_name_array">
+        <item>東京</item>
+        <item>大島</item>
+        <item>八丈島</item>
+        <item>父島</item>
+    </string-array>
+
+    <string-array name="tokyo_id_array">
+        <item>130010</item>
+        <item>130020</item>
+        <item>130030</item>
+        <item>130040</item>
+    </string-array>
+
+    <!-- ================ 神奈川 ================ -->
+    <array name="kanagawa_array">
+        <item>@array/kanagawa_name_array</item>
+        <item>@array/kanagawa_id_array</item>
+    </array>
+
+    <string-array name="kanagawa_name_array">
+        <item>横浜</item>
+        <item>小田原</item>
+    </string-array>
+
+    <string-array name="kanagawa_id_array">
+        <item>140010</item>
+        <item>140020</item>
+    </string-array>
 </resources>
