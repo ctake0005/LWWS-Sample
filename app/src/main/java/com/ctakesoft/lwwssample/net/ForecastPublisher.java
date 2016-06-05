@@ -73,7 +73,6 @@ public class ForecastPublisher {
 
             @Override
             public void onResponse(final Call call, final Response response) throws IOException {
-                Log.d(TAG, "onResponse() called with " + "call = [" + call + "], response = [" + response + "]");
                 final Forecast forecast = new Gson().fromJson(response.body().charStream(), Forecast.class);
                 handler.post(new Runnable() {
                     @Override

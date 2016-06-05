@@ -19,8 +19,6 @@ import java.io.IOException;
 
 public class ResultActivity extends AppCompatActivity implements ForecastPublisher.ForecastReceiver {
 
-    private static final String TAG = ResultActivity.class.getSimpleName();
-
     public static final String INTENT_KEY_SELECTED_ID = "selected_id";
     private String mSelectedArea;
 
