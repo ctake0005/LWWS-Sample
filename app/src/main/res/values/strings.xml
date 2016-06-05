@@ -8,6 +8,12 @@
         <item>@id/day_after_tomorrow_panel</item>
     </array>
 
+    <string-array name="daily_labels">
+        <item>今日</item>
+        <item>明日</item>
+        <item>明後日</item>
+    </string-array>
+
     <!-- ================ 関東 ================ -->
     <string-array name="kanto_array">
         <item>茨城県</item>

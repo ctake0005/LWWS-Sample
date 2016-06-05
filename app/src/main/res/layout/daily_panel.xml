@@ -6,17 +6,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:visibility="gone"
     tools:showIn="@layout/activity_result">
 
     <TextView
+        android:id="@+id/daily_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="今日"/>
 
     <ImageView
         android:id="@+id/daily_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
         android:src="@android:drawable/ic_delete"/>
 
     <TextView
