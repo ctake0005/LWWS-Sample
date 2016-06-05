@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ctakesoft.lwwssample.ResultActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/forecast_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="東京都 東京 の天気"/>
+
+            <TextView
+                android:id="@+id/description_text"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                tools:text="本州付近は、日本海に中心を持つ高気圧に覆われています。また前線が日 本の南に停滞しています。 【関東甲信地方】 関東甲信地方は、おおむね晴れていますが、沿岸部では曇りで、雨の降っ ている所があります。 5日は、高気圧に覆われおおむね晴れますが、沿岸部では、はじめ雲が広 がり雨の降る所があるでしょう。 6日は、関東地方では三陸沖へ移動する高気圧からの湿った空気の影響で おおむね曇りとなる見込みです。甲信地方は、はじめ晴れますが、午後は気 圧の谷の影響で曇るでしょう。また午後は、にわか雨の降る所があるでしょ う。 関東近海では、5日から6日はうねりを伴い波が高いでしょう。船舶は高 波に注意してください。 【東京地方】 5日は、曇りで夜は晴れるでしょう。 6日は、曇りでしょう。"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:id="@+id/today_panel"
+                        layout="@layout/daily_panel"/>
+
+                    <include
+                        android:id="@+id/tomorrow_panel"
+                        layout="@layout/daily_panel"/>
+
+                    <include
+                        android:id="@+id/day_after_tomorrow_panel"
+                        layout="@layout/daily_panel"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/retry"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

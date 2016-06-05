@@ -59,15 +59,20 @@ public class ForecastPublisher {
                 .build();
         mOkHttpClient.newCall(request).enqueue(new Callback() {
             @Override
-            public void onFailure(Call call, IOException e) {
+            public void onFailure(final Call call, final IOException e) {
                 Log.w(TAG, "onFailure: ", e);
-                if (mReceiver != null) {
-                    mReceiver.onError(e);
-                }
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (mReceiver != null) {
+                            mReceiver.onError(e);
+                        }
+                    }
+                });
             }
 
             @Override
-            public void onResponse(Call call, Response response) throws IOException {
+            public void onResponse(final Call call, final Response response) throws IOException {
                 Log.d(TAG, "onResponse() called with " + "call = [" + call + "], response = [" + response + "]");
                 final Forecast forecast = new Gson().fromJson(response.body().charStream(), Forecast.class);
                 handler.post(new Runnable() {

@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">LWWS Sample</string>
+    <string name="retry">retry</string>
+
+    <array name="daily_panel_array">
+        <item>@id/today_panel</item>
+        <item>@id/tomorrow_panel</item>
+        <item>@id/day_after_tomorrow_panel</item>
+    </array>
 
     <!-- ================ 関東 ================ -->
     <string-array name="kanto_array">
